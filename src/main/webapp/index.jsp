@@ -5,10 +5,8 @@
   <h3> Good luck to everbody... </h3>
   <h3> You are doing good work ... </h3>
   <h1> Latest revision </h1>  
-  <h1> Dev Ops </h1>  
-  <h1> Fullls tack </h1>  
-  <h1> Fullls tack </h1>  
-  <h1> Fullls tack </h1>  
+  <h1> End of the day </h1>  
+  
 
  
 
