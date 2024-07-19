@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build Application') {
              steps{
-                build job: 'tomcat-java'
+                build job: 'build-web-application'
             }
         }
         stage('Deploy to Staging Environment'){
             steps{
-                build job: 'fromjenkinsfreestyle'
+                build job: 'Deploy-Application-Staging-Environment'
             }            
         }
         stage('Deploy to Production Environment'){
@@ -16,7 +16,7 @@ pipeline {
                 timeout(time:5, unit:'DAYS'){
                     input message:'Approve PRODUCTION Deployment?'
                 }
-                build job: 'thirdProject'
+                build job: 'Deploy-Application-Production-Environment'
             }
         }
     }
